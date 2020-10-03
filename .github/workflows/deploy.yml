@@ -2,6 +2,7 @@ name: E2E
 
 on:
    push:
+      - develop
 
 jobs:
    add_version:

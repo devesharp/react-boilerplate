@@ -2,13 +2,6 @@ name: E2E
 
 on:
    push:
-      branches:
-         - develop
-         - theme/*
-   pull_request:
-      branches:
-         - develop
-         - theme/*
 
 jobs:
    test:

@@ -3,5 +3,7 @@ describe('Actions', () => {
       cy.visit('/');
    });
 
-   it('example', () => {});
+   it('example', () => {
+      cy.testId('home-page').contains('Home Page');
+   });
 });

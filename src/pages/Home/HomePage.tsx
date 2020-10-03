@@ -6,7 +6,7 @@ export const HomePage: React.FunctionComponent<any> = () => {
    const auth: any = useSelector<any>((store: any) => store.auth);
 
    return (
-      <Style>
+      <Style data-cy="home-page">
          Home Page
          <br />
          Logged: {!auth.isLogged ? 'false' : 'true'}

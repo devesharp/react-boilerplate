@@ -2,7 +2,6 @@ name: E2E
 
 on:
    push:
-      branch
 
 jobs:
    add_version:

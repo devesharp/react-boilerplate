@@ -1,0 +1,10 @@
+
+{
+   "extends": "../tsconfig.paths.json",
+   "include": ["../cypress/**/*.ts", "../node_modules/cypress"],
+   "compilerOptions": {
+      "isolatedModules": false,
+      "types": ["cypress", "node", "jest", "chai"],
+      "lib": ["es2015", "dom"]
+   }
+}

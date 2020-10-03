@@ -1,0 +1,15 @@
+version: "3"
+services:
+   test:
+      image: cypress/browsers:node12.13.0-chrome78-ff70-brave78
+      volumes:
+         - ./:/app
+         - ./cypress.cy.json:/app/cypress.json
+      command: "cd app && npm cypress"
+      depends_on:
+         - app
+
+   # Apache
+   app:
+      build: .
+      ports: ['3000:80']

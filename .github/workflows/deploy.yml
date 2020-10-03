@@ -2,12 +2,11 @@ name: E2E
 
 on:
    push:
+      branch
 
 jobs:
    add_version:
       runs-on: ubuntu-latest
-      needs: test
-
       steps:
          -  uses: actions/checkout@v1
 

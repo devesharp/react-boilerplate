@@ -1,11 +1,16 @@
-import { connect } from 'react-redux';
+import { rootSaga } from '~/redux/modules/rootSaga';
+import { createStore, applyMiddleware, compose } from 'redux';
+import { persistStore } from 'redux-persist';
+import createSagaMiddleware from 'redux-saga';
+import { rootReducer } from '~/redux/modules/rootReducer';
+import persistReducer from './modules/persistReducers';
 
-// const Counter = ...
+const sagaMiddleware = createSagaMiddleware();
 
-const mapStateToProps = (state: any): any => {
-    return {};
-};
+const store = createStore(persistReducer(rootReducer), applyMiddleware(sagaMiddleware));
 
-const mapDispatchToProps = {};
+const persistor = persistStore(store);
 
-export default connect(mapStateToProps, mapDispatchToProps);
+sagaMiddleware.run(rootSaga);
+
+export { store, persistor };

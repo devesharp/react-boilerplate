@@ -1,6 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Style from './HomePage.style';
 
 export const HomePage: React.FunctionComponent<any> = () => {
-    return <Style>Home Page</Style>;
+   const auth: any = useSelector<any>((store: any) => store.auth);
+
+   return (
+      <Style>
+         Home Page
+         <br />
+         Logged: {!auth.isLogged ? 'false' : 'true'}
+      </Style>
+   );
 };

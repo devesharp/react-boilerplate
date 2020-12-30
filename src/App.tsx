@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Router } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
+import { Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import history from '~/config/history';
 import { ThemeVariables } from '~/config/theme';

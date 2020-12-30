@@ -1,0 +1,39 @@
+name: E2E
+
+on:
+   push:
+      branches-ignore:
+         - '**'
+
+jobs:
+   add_version:
+      runs-on: ubuntu-latest
+      steps:
+         -  uses: actions/checkout@v1
+
+         -  name: Use Node.js
+            uses: actions/setup-node@v1
+            with:
+               node-version: '12.x'
+
+         -  run: npm install -g @devesharp/ds-releaser
+
+         -  run: ds-releaser -t semantic --nonRoot
+
+         -  name: Push changes
+            uses: ad-m/github-push-action@master
+            with:
+               tags: true
+               github_token: ${{ secrets.GITHUB_TOKEN }}
+   deploy:
+      runs-on: ubuntu-latest
+      steps:
+         -  uses: actions/checkout@v1
+
+         -  run: sudo apt-get install sshpass
+
+         -  run: sudo apt-get install pv
+
+         -  run: docker build -t react-app:latest .
+
+         -  run: docker save react-app:latest | bzip2 | pv | sshpass -p ${{ secrets.PASSWORD }} ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@devesharp.com 'bunzip2 | docker load'

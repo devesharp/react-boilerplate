@@ -14,9 +14,8 @@ export default css`
    body,
    #root {
       height: 100%;
-      font-family: 'Raleway', sans-serif;
-      background: #222;
-      color: #212529;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
       font-size: 14px;
    }
    body {

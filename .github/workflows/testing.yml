@@ -9,27 +9,9 @@ jobs:
       steps:
          -  uses: actions/checkout@v2
 
-         -  uses: actions/setup-node@v1
-            with:
-               node-version: '12.x'
-
-         -  name: Cache NPM dependencies
-            id: cache
-            uses: actions/cache@v2
-            with:
-               path: '**/node_modules'
-               key: ${{ runner.OS }}-node_modules-cache-${{ hashFiles('**/yarn.lock') }}
-               restore-keys: |
-                  ${{ runner.OS }}-node_modules-cache-
-         -  name: Install dependencies
-            if: steps.cache.outputs.cache-hit != 'true'
-            run: yarn install
-            
-         -  run: rm .dockerignore
-              
          -  name: Start containers
             run: docker-compose -f docker-compose.test.yml up -d
 
          -  name: Run tests
-            run: docker-compose -f docker-compose.test.yml run test bash -c "cd \app && yarn cypress run --browser chrome"
+            run: docker-compose -f docker-compose.test.yml run test bash -c "cd \app && yarn && yarn cypress run --browser chrome"
             timeout-minutes: 20

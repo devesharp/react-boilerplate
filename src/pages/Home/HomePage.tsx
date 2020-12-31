@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Tabs } from '@devesharp/react/web';
 import Style from './HomePage.style';
 
 export const HomePage: React.FunctionComponent<any> = () => {
@@ -7,6 +8,21 @@ export const HomePage: React.FunctionComponent<any> = () => {
 
    return (
       <Style data-cy="home-page">
+         <Tabs
+            options={[
+               {
+                  id: 'tab2',
+                  name: 'Tab A',
+               },
+               {
+                  id: 'taba',
+                  name: 'Tab B',
+               },
+            ]}
+            onSelect={() => {
+               // console.log('sdsd');
+            }}
+         />
          Home Page
          <br />
          Logged: {!auth.isLogged ? 'false' : 'true'}

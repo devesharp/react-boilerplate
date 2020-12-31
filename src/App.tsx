@@ -7,6 +7,7 @@ import history from '~/config/history';
 import { ThemeVariables } from '~/config/theme';
 import { Routes } from '~/routes/Routes';
 import { store, persistor } from '~/redux/store';
+import { GlobalStyles } from '~/styles';
 
 function App(): JSX.Element {
    return (
@@ -16,6 +17,7 @@ function App(): JSX.Element {
                <Router history={history}>
                   <Routes />
                </Router>
+               <GlobalStyles />
             </ThemeProvider>
          </PersistGate>
       </Provider>

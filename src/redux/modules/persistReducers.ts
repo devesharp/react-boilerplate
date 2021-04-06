@@ -7,7 +7,7 @@ export default (reducers: Reducer<any, any>): Reducer<any, any> => {
       {
          key: 'app',
          storage,
-         whitelist: ['auth'],
+         whitelist: ['auth', 'user'],
       },
       reducers,
    );

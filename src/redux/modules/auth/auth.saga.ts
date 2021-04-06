@@ -1,5 +1,5 @@
-import { all, takeLatest, put, call, delay } from 'redux-saga/effects';
-import { typeAuthLogout } from '~/redux/modules/auth/auth.interface';
+import { all, takeLatest, put, delay } from 'redux-saga/effects';
+import { HttpService } from '@devesharp/react-utils';
 
 export function setToken({ payload }: any): void {
    if (!payload) return;
@@ -7,14 +7,8 @@ export function setToken({ payload }: any): void {
    const { token } = payload.auth;
 
    if (token) {
-      // Http.defaults.headers.Authorization = `Bearer ${token}`;
+      HttpService.defaults.headers.Authorization = `Bearer ${token}`;
    }
 }
 
-export function* logout(): Generator {
-   yield delay(2000);
-   // Limpar Token
-   yield put({ type: 'empty' });
-}
-
-export const AuthSaga = all([takeLatest('persist/REHYDRATE' as any, setToken), takeLatest(typeAuthLogout, logout)]);
+export const AuthSaga = all([takeLatest('persist/REHYDRATE' as any, setToken)]);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Tabs } from '@devesharp/react/web';
+import { Tabs } from '@devesharp/react-web';
 import Style from './HomePage.style';
 
 export const HomePage: React.FunctionComponent<any> = () => {

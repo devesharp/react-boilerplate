@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { actionLogOut, actionSetAuth } from '~/redux/modules/auth';
-import { IAuthReducer } from '~/redux/modules/auth/auth.interface';
+import { actionLogOut, actionSetAuth } from '~/store/modules/auth';
+import { IAuthReducer } from '~/store/modules/auth/auth.interface';
 
 const selectAuth = (store: any): any => store.auth;
 

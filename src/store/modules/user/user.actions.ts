@@ -1,4 +1,4 @@
-import { IAction } from '~/redux/interfaces';
+import { IAction } from '~/store/interfaces';
 import { typeUserUpdate, typeEmptyUser } from './user.interface';
 
 export function updateUser<IUser>(user: IUser): IAction<IUser> {

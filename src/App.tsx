@@ -7,7 +7,7 @@ import { AppProvider } from '@devesharp/react-web';
 import history from '~/config/history';
 import { ThemeVariables } from '~/config/theme';
 import { Routes } from '~/routes/Routes';
-import { store, persistor } from '~/redux/store';
+import { store, persistor } from '~/store/store';
 import { GlobalStyles } from '~/styles';
 
 function App(): JSX.Element {

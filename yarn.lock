@@ -1266,10 +1266,10 @@
     eslint-plugin-react "7.15.1"
     eslint-plugin-react-hooks "1.7.0"
 
-"@devesharp/react-hooks@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.2.tgz#d4d98cd7e6401e52cd45308fa786673aea1bcba5"
-  integrity sha512-XbElE0ST72pL0VsULHz3cQZ0mYV7rhRJ1piIESbqv2gQ78IfugfsJ6OH0lrIgRvgNTe8FlnGA8WcDgGxJ0BrYg==
+"@devesharp/react-hooks@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.5.tgz#415c87788e779c97b21d37095c9d75a7ce149105"
+  integrity sha512-M/Iow9kHfj2yyHV2OUO+PIigvlIiyDW/xKuQQ8s/AsD8bfNwNwI1Dr5Sg7iYbaErg/9uMzSzQszz1XJrTzB9UQ==
   dependencies:
     "@devesharp/react-utils" "^1.0.2"
     "@unform/core" "^2.1.6"
@@ -1296,12 +1296,12 @@
     immer "^9.0.1"
     lodash "^4.17.21"
 
-"@devesharp/react-web@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.3.tgz#dd2d865649f1c7cc788f2089aa19397f2cb3fd46"
-  integrity sha512-qo6djYzqBvbNmBR1K3LM/X7qJtVZqODJjE+7lTNEWu+fC/nWbwemcEYmyDxfjATmRBPqUyU3t3iuOHGNV+iD/A==
+"@devesharp/react-web@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.5.tgz#33b0e584d643e09654dbc4c8947c77c447c1deec"
+  integrity sha512-P4VVEDmUcH0UM20P2AEKIpqgieG730WBCwMuZIwz8QULvvhFSpS3B7lwPM4qJGJtRLSvnshN7X39pjYZnWySTw==
   dependencies:
-    "@devesharp/react-hooks" "^1.0.2"
+    "@devesharp/react-hooks" "^1.0.5"
     "@devesharp/react-utils" "^1.0.2"
     "@devesharp/upload-files-js" "^0.0.4"
     "@dnd-kit/core" "^2.1.2"
@@ -11579,7 +11579,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^6.3.3, rxjs@^6.6.3:
+rxjs@^6.3.3:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
@@ -11593,7 +11593,7 @@ rxjs@^6.5.3:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.6.0:
+rxjs@^6.6.0, rxjs@^6.6.7:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==

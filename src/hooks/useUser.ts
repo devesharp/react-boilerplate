@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { IUser } from '~/types/User.interface';
+import { IUser } from '~/common/types/User.interface';
 
 const selectUser = (store: any): any => store.user;
 

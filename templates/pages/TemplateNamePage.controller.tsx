@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState, useRef } from 'react';
 
-export function TemplateNameController(props?: any): any {
+export function TemplateNamePageController(props?: any): any {
    
    return {};
 };

@@ -25,10 +25,10 @@
          "withTest": false,
          "customTemplates": {
             "index": "templates/pages/index.tsx",
-            "component": "templates/pages/TemplateName.tsx",
-            "style": "templates/pages/TemplateName.style.tsx",
-            "story": "templates/pages/TemplateName.controller.tsx",
-            "lazy": "templates/pages/TemplateName.interface.tsx"
+            "component": "templates/pages/TemplateNamePage.tsx",
+            "style": "templates/pages/TemplateNamePage.style.tsx",
+            "story": "templates/pages/TemplateNamePage.controller.tsx",
+            "lazy": "templates/pages/TemplateNamePage.interface.tsx"
          }
       }
    }

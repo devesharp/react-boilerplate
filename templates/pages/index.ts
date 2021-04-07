@@ -1,2 +1,2 @@
 export * from './TemplateName';
-export * from './TemplateName.interface';
+export * from './TemplateNamePage.interface';

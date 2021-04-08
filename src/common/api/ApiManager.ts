@@ -2,18 +2,16 @@ import { HttpService, Resolve } from '@devesharp/react-utils';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
-export class ApiManager {
-   host?: string;
+const host = 'http://localhost:8000/api';
 
-   login<T = any>(login: string, password: string): Observable<T> {
-      return this.post<T>(`/auth`, {
-         login,
-         password,
-      });
+export class ApiManager {
+
+   login<T = any>(params: { login: string, password: string}): Observable<T> {
+      return ApiManager.post<T>(`/auth/login`, params);
    }
 
-   private post<T = any>(path: string, body: any): Observable<T> {
-      return HttpService.post(this.host + path, body).pipe(map((r: any) => r.data));
+   static post<T = any>(path: string, body: any): Observable<T> {
+      return HttpService.post(host + path, body).pipe(map((r: any) => r.data));
    }
 
    // get<Response = any>(path: string): IResolveGet<Response> {

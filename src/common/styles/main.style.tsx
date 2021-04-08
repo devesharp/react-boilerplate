@@ -21,13 +21,13 @@ export default css<any>`
    body {
       -webkit-font-smoothing: antialiased;
    }
-   
+
    .input-title {
       font-size: 16px !important;
       text-transform: none !important;
       font-weight: 400 !important;
    }
-   
+
    .input-border {
       outline: none;
       border: 1px solid rgb(210, 210, 210) !important;
@@ -40,21 +40,21 @@ export default css<any>`
       //padding-left: 16px !important;
       color: rgb(74, 74, 74) !important;
       box-sizing: border-box !important;
-      
+
       input {
          font-size: 16px !important;
          font-weight: 400 !important;
       }
-      
+
       &.focus {
-         border-color: ${p => p.theme.primary} !important;
+         border-color: ${(p) => p.theme.primary} !important;
       }
    }
-   
+
    b {
       font-weight: 500 !important;
    }
-   
+
    .btn {
       height: 43px;
       font-size: 16px;

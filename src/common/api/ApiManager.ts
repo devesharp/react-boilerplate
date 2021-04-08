@@ -5,8 +5,7 @@ import { Observable } from 'rxjs';
 const host = 'http://localhost:8000/api';
 
 export class ApiManager {
-
-   login<T = any>(params: { login: string, password: string}): Observable<T> {
+   login<T = any>(params: { login: string; password: string }): Observable<T> {
       return ApiManager.post<T>(`/auth/login`, params);
    }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import {Input, Tabs} from '@devesharp/react-web';
+import { Input, Tabs } from '@devesharp/react-web';
 import Style from './HomePage.style';
 
 export const HomePage: React.FunctionComponent<any> = () => {
@@ -25,7 +25,7 @@ export const HomePage: React.FunctionComponent<any> = () => {
          />
          Home Page
          <br />
-         <Input title={'sdsde'}></Input>
+         <Input title="sdsde" />
          Logged: {!auth.isLogged ? 'false' : 'true'}
       </Style>
    );

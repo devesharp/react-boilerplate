@@ -8,12 +8,12 @@ export const Container = css`
    min-height: 100%;
    align-items: center;
    justify-content: center;
-   
+
    .login-container {
       width: 100%;
       max-width: 400px;
       padding: 80px 30px;
-      
+
       .logo {
          display: table;
          margin: auto;
@@ -26,5 +26,4 @@ export const Container = css`
          margin: auto;
       }
    }
-       
 `;

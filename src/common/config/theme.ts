@@ -1,3 +1,6 @@
-import { ITheme } from '@devesharp/react-web';
+import { ITheme, ThemeDefault } from '@devesharp/react-web';
 
-export const ThemeVariables: ITheme = {};
+export const ThemeVariables: ITheme = {
+    ...ThemeDefault,
+    primary: '#09abed'
+};

@@ -1,8 +1,9 @@
 import { HttpService, Resolve } from '@devesharp/react-utils';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { environment } from '~/environments/environment';
 
-const host = 'http://localhost:8000/api';
+console.log(environment);
 
 export class ApiManager {
    login<T = any>(params: { login: string; password: string }): Observable<T> {
@@ -14,11 +15,11 @@ export class ApiManager {
    }
 
    static post<T = any>(path: string, body: any): Observable<T> {
-      return HttpService.post(host + path, body).pipe(map((r: any) => r.data));
+      return HttpService.post(environment.API + path, body).pipe(map((r: any) => r.data));
    }
 
    static get<T = any>(path: string): Observable<T> {
-      return HttpService.get(host + path).pipe(map((r: any) => r.data));
+      return HttpService.get(environment.API + path).pipe(map((r: any) => r.data));
    }
 }
 

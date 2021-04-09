@@ -1,11 +1,11 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
-import { HomePage } from '~/pages/Home';
-import { NotfoundPage } from '~/routes/NotFound';
-import { LoginPage } from '~/pages/Login/LoginPage';
-import { PrivateRoute } from '~/routes/PrivateRoute';
-import { LoadingScreen } from '~/components/LoadingScreen/LoadingScreen';
-import { useLoadApp } from '~/hooks/useLoadApp';
+import { HomePage } from '~/app/pages/Home';
+import { NotfoundPage } from '~/app/routes/NotFound';
+import { LoginPage } from '~/app/pages/Login/LoginPage';
+import { PrivateRoute } from '~/app/routes/PrivateRoute';
+import { LoadingScreen } from '~/app/components/LoadingScreen/LoadingScreen';
+import { useLoadApp } from '~/app/hooks/useLoadApp';
 
 export function Routes(): any {
    const { started, criticalError, errorLoadData, retryLoad } = useLoadApp();

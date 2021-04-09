@@ -1,5 +1,5 @@
-import { IAction } from '~/store/interfaces';
-import { IAuthReducer, typeAuthLogout, typeSetAuth } from '~/store/modules/auth/auth.interface';
+import { IAction } from '~/app/store/interfaces';
+import { IAuthReducer, typeAuthLogout, typeSetAuth } from '~/app/store/modules/auth/auth.interface';
 
 const INITIAL_STATE: IAuthReducer = {
    isLogged: false,

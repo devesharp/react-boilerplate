@@ -1,4 +1,4 @@
-import { IAction } from '~/store/interfaces';
+import { IAction } from '~/app/store/interfaces';
 import { typeUserUpdate, typeEmptyUser } from './user.interface';
 
 export function UserReducer(state = null, action: IAction<any>): any {

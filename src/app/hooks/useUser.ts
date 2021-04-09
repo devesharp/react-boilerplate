@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { IUser } from '~/common/types/User.interface';
-import { actionUpdateUser } from '~/store/modules/user';
+import { IUser } from '~/app/common/types/User.interface';
+import { actionUpdateUser } from '~/app/store/modules/user';
 
 const selectUser = (store: any): any => store.user;
 

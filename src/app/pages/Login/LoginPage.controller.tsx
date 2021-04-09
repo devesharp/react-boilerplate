@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useState, useRef } from 'react';
 import { useViewForm } from '@devesharp/react-hooks';
 import * as Yup from 'yup';
-import { API } from '~/common/api/ApiManager';
-import { useAuth } from '~/hooks/useAuth';
-import { IUser } from '~/common/types/User.interface';
-import { useUser } from '~/hooks/useUser';
+import { API } from '~/app/common/api/ApiManager';
+import { useAuth } from '~/app/hooks/useAuth';
+import { IUser } from '~/app/common/types/User.interface';
+import { useUser } from '~/app/hooks/useUser';
 
 export function LoginPageController(props?: any): any {
    const [error, setError] = useState('');

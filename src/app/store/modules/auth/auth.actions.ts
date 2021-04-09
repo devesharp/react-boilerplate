@@ -1,4 +1,4 @@
-import { IAction } from '~/store/interfaces';
+import { IAction } from '~/app/store/interfaces';
 import { IAuthReducer, typeSetAuth, typeAuthLogout } from './auth.interface';
 
 export function actionSetAuth(isLogged: boolean, token: string): IAction<IAuthReducer> {

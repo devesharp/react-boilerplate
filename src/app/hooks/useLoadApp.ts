@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { useView } from '@devesharp/react-hooks';
-import { actionLogOut, actionSetAuth } from '~/store/modules/auth';
-import { IAuthReducer } from '~/store/modules/auth/auth.interface';
-import { actionCleanUser } from '~/store/modules/user';
-import { API } from '~/common/api/ApiManager';
-import { useAuth } from '~/hooks/useAuth';
+import { actionLogOut, actionSetAuth } from '~/app/store/modules/auth';
+import { IAuthReducer } from '~/app/store/modules/auth/auth.interface';
+import { actionCleanUser } from '~/app/store/modules/user';
+import { API } from '~/app/common/api/ApiManager';
+import { useAuth } from '~/app/hooks/useAuth';
 
 /**
  * Carregar todas as dependências da aplicação, ex:

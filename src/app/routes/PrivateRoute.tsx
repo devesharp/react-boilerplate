@@ -2,7 +2,7 @@ import React from 'react';
 import QueryString from 'query-string';
 import { Route, useLocation, Redirect } from 'react-router-dom';
 import { RouteProps } from 'react-router';
-import { useAuth } from '~/hooks/useAuth';
+import { useAuth } from '~/app/hooks/useAuth';
 
 interface IPrivateRouteProps extends RouteProps {
    isPrivate?: boolean;

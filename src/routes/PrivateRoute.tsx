@@ -18,6 +18,10 @@ export function PrivateRoute({ isPrivate = false, component: Component, ...rest 
          return <Redirect to="/login" />;
       }
 
+      if (location.pathname === '/' || location.pathname === '') {
+         return <Redirect to="/login" />;
+      }
+
       return <Redirect to={`/login?redirect=${location.pathname}`} />;
    }
 

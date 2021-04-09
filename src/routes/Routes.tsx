@@ -6,10 +6,8 @@ import { LoginPage } from '~/pages/Login/LoginPage';
 import { PrivateRoute } from '~/routes/PrivateRoute';
 import { LoadingScreen } from '~/components/LoadingScreen/LoadingScreen';
 import { useLoadApp } from '~/hooks/useLoadApp';
-import {useAuth} from "~/hooks/useAuth";
 
 export function Routes(): any {
-   const { isLogged } = useAuth();
    const { started, criticalError, errorLoadData, retryLoad } = useLoadApp();
 
    return (

@@ -1,3 +1,4 @@
+/* eslint-disable */
 /// <reference types="react-scripts" />
 // import original module declarations
 import 'styled-components';
@@ -10,5 +11,6 @@ interface Console {
 
 // and extend them!
 declare module 'styled-components' {
-   export type DefaultTheme = ITheme;
+   export interface DefaultTheme extends ITheme {
+   }
 }

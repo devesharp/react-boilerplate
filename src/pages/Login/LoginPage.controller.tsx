@@ -14,8 +14,8 @@ export function LoginPageController(props?: any): any {
    const { saving: loading, onSubmitForm, formRef } = useViewForm({
       resolveCreate: API.login,
       yupValidateSchema: Yup.object().shape({
-         login: Yup.string().required(),
-         password: Yup.string().required(),
+         login: Yup.string().required('Informe o login'),
+         password: Yup.string().required('Informe a senha'),
       }),
       onSuccess(res: IUser) {
          updateUser(res);

@@ -1,5 +1,6 @@
 import React, { FunctionComponent, useState, useRef } from 'react';
 import { Form } from '@unform/web';
+import { Link } from 'react-router-dom';
 import { Button, Input, AnimationInOut, LoaderIcon } from '@devesharp/react-web';
 import { useTheme } from 'styled-components';
 import { ILoginProps } from './LoginPage.interface';
@@ -35,7 +36,18 @@ export const LoginPage: FunctionComponent<ILoginProps> = function Login(props) {
                   </div>
 
                   <div className="form-group">
-                     <Input title="Senha" name="password" password />
+                     <Input
+                        title={
+                           <>
+                              Senha{' '}
+                              <Link to="/forget-password" className="float-right">
+                                 <b>Esqueceu a senha?</b>
+                              </Link>
+                           </>
+                        }
+                        name="password"
+                        password
+                     />
                   </div>
 
                   <div className="form-group">

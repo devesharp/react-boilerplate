@@ -1,15 +1,33 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import { HomePage } from '~/pages/Home';
 import { NotfoundPage } from '~/routes/NotFound';
 import { LoginPage } from '~/pages/Login/LoginPage';
+import { PrivateRoute } from '~/routes/PrivateRoute';
+import { LoadingScreen } from '~/components/LoadingScreen/LoadingScreen';
+import { useLoadApp } from '~/hooks/useLoadApp';
+import {useAuth} from "~/hooks/useAuth";
 
 export function Routes(): any {
+   const { isLogged } = useAuth();
+   const { started, criticalError, errorLoadData, retryLoad } = useLoadApp();
+
    return (
-      <Switch>
-         <Route path="/" exact component={HomePage} />
-         <Route path="/login" exact component={LoginPage} />
-         <Route component={NotfoundPage} />
-      </Switch>
+      <>
+         <LoadingScreen retry={retryLoad} error={criticalError || errorLoadData} show={!started} />
+
+         {started && (
+            <Switch>
+               {/* public routes */}
+               <PrivateRoute path="/login" exact component={LoginPage} />
+
+               {/* private routes */}
+               <PrivateRoute path="/" exact component={HomePage} isPrivate />
+
+               {/* not found */}
+               <PrivateRoute component={NotfoundPage} />
+            </Switch>
+         )}
+      </>
    );
 }

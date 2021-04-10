@@ -5,7 +5,7 @@
    "testLibrary": "Testing Library",
    "component": {
       "default": {
-         "path": "src/components",
+         "path": "src/app/components",
          "withStory": false,
          "withLazy": true,
          "withStyle": true,
@@ -18,7 +18,7 @@
          }
       },
       "page": {
-         "path": "src/pages",
+         "path": "src/app/pages",
          "withStory": true,
          "withLazy": true,
          "withStyle": true,

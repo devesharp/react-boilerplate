@@ -3,8 +3,6 @@ import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { environment } from '~/environments/environment';
 
-console.log(environment);
-
 export class ApiManager {
    login<T = any>(params: { login: string; password: string }): Observable<T> {
       return ApiManager.post<T>(`/auth/login`, params);

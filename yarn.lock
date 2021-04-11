@@ -1266,10 +1266,10 @@
     eslint-plugin-react "7.15.1"
     eslint-plugin-react-hooks "1.7.0"
 
-"@devesharp/react-hooks@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.6.tgz#628227dc81c22bc9ae2371cf4bd9d14655915cae"
-  integrity sha512-iFDpy+I+79Qg0s+4+kZEg5NU8sbENm4EM/LsKgyEqju7VA/ptaGFPX3kqXO6czP3s3awDE7gSe5TZ2nOZlg3tA==
+"@devesharp/react-hooks@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.16.tgz#60994cdff50a5f424054fea85212547b24f679d5"
+  integrity sha512-gxRTRjzAjc6G02ZwS1ogFRA68yQUc35gNZF7iRPtjz4PYH/QxVVvgpA7KzV+9H7/hYtQMA3pz5BYoODyzjVFMw==
   dependencies:
     "@devesharp/react-utils" "^1.0.6"
     "@unform/core" "^2.1.6"
@@ -1296,12 +1296,12 @@
     immer "^9.0.1"
     lodash "^4.17.21"
 
-"@devesharp/react-web@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.7.tgz#7a64b6706ee69c329b5312b544c2c9abedcd4b81"
-  integrity sha512-QHsRNWyQAOvsA+OHQ99JCIe83w2EMsvLVEp3ilRj6Ilb4p7el+2Ig8DVsuPvnJph21Qlbshpvf/HYRYCCVMwhA==
+"@devesharp/react-web@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.16.tgz#7cc8b6e49349d2674f04b320bba96b98febb3cd8"
+  integrity sha512-3LSi5MtLsEEGaSmbmJrKO+8W0JmROsmpAPu3Jx8Y/VlJGZ8gNnGi/Ot8ugdawMA01TQLqS9wUvIfmVzOsxysog==
   dependencies:
-    "@devesharp/react-hooks" "^1.0.6"
+    "@devesharp/react-hooks" "^1.0.16"
     "@devesharp/react-utils" "^1.0.6"
     "@devesharp/upload-files-js" "^0.0.4"
     "@dnd-kit/core" "^2.1.2"

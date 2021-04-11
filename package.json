@@ -3,9 +3,9 @@
    "version": "1.0.0",
    "private": true,
    "dependencies": {
-      "@devesharp/react-hooks": "^1.0.6",
+      "@devesharp/react-hooks": "^1.0.16",
       "@devesharp/react-utils": "^1.0.6",
-      "@devesharp/react-web": "^1.0.7",
+      "@devesharp/react-web": "^1.0.16",
       "@fortawesome/fontawesome-svg-core": "^1.2.34",
       "@fortawesome/free-regular-svg-icons": "^5.15.2",
       "@fortawesome/free-solid-svg-icons": "^5.15.2",

@@ -3,6 +3,7 @@ import QueryString from 'query-string';
 import { Route, useLocation, Redirect } from 'react-router-dom';
 import { RouteProps } from 'react-router';
 import { useAuth } from '~/app/hooks/useAuth';
+import { Dashboard } from '~/app/components/Dashboard/Dashboard';
 
 interface IPrivateRouteProps extends RouteProps {
    isPrivate?: boolean;
@@ -34,9 +35,9 @@ export function PrivateRoute({ isPrivate = false, component: Component, ...rest 
 
    if (isPrivate) {
       return (
-         <>
+         <Dashboard>
             <Route {...rest} component={Component} />
-         </>
+         </Dashboard>
       );
    }
 

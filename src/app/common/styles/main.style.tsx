@@ -30,27 +30,43 @@ export default css<any>`
    }
 
    .input-title {
-      font-size: 16px !important;
+      font-size: 14px !important;
       text-transform: none !important;
       font-weight: 400 !important;
+      color: rgba(0, 0, 0, 0.45) !important;
+      padding-bottom: 0px;
+      height: 20px;
+
+      &.focus {
+         color: ${(p) => p.theme.primary} !important;
+      }
    }
 
    .input-border {
-      outline: none;
-      border: 1px solid rgb(210, 210, 210) !important;
-      border-radius: 4px !important;
-      width: 100% !important;
-      min-height: 48px !important;
-      font-weight: 500 !important;
-      //padding-top: 11px !important;
-      //padding-bottom: 12px !important;
-      //padding-left: 16px !important;
-      color: rgb(74, 74, 74) !important;
-      box-sizing: border-box !important;
+      display: flex;
+      align-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      width: 100%;
+      background: white;
+      border: 2px solid rgba(0, 0, 0, 0.25);
+      border-radius: 3px;
+      color: rgb(68, 68, 68);
+      font-size: 15px;
+      font-weight: 600;
+      height: 35px !important;
+      min-height: 35px !important;
+      border-radius: 0px !important;
+      border-top: none !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-image: initial !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
 
       input {
-         font-size: 16px !important;
+         font-size: 15px !important;
          font-weight: 400 !important;
+         padding: 0px !important;
       }
 
       &.focus {
@@ -58,12 +74,36 @@ export default css<any>`
       }
    }
 
+   .container {
+      width: 100%;
+      max-width: 1380px;
+   }
+
    b {
       font-weight: 500 !important;
    }
 
    .btn {
-      height: 43px;
-      font-size: 16px;
+      height: 35px;
+      font-size: 15px;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+   }
+
+   .header-title {
+      background: ${(p) => p.theme.primary};
+      padding: 15px 20px;
+      color: white;
+
+      h4 {
+         font-size: 22px;
+         margin: 0px;
+         padding: 0px;
+      }
+   }
+
+   .card {
+      box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+      border: 0;
    }
 `;

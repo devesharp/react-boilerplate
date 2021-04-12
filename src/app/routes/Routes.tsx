@@ -7,6 +7,7 @@ import { PrivateRoute } from '~/app/routes/PrivateRoute';
 import { LoadingScreen } from '~/app/components/LoadingScreen/LoadingScreen';
 import { useLoadApp } from '~/app/hooks/useLoadApp';
 import {ListingPage} from "~/app/pages/Listing/ListingPage";
+import {CreateResourcePage} from "~/app/pages/CreateResource/CreateResourcePage";
 
 export function Routes(): any {
    const { started, criticalError, errorLoadData, retryLoad } = useLoadApp();
@@ -23,6 +24,7 @@ export function Routes(): any {
                {/* private routes */}
                <PrivateRoute path="/" exact component={HomePage} isPrivate />
                <PrivateRoute path="/listing" exact component={ListingPage} isPrivate />
+               <PrivateRoute path="/create" exact component={CreateResourcePage} isPrivate />
 
                {/* not found */}
                <PrivateRoute component={NotfoundPage} />

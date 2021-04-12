@@ -15,5 +15,6 @@ export const Container = css`
    .page-container {
       flex: 1;
       overflow-y: auto;
+      position: relative;
    }
 `;

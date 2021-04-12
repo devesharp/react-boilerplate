@@ -106,4 +106,29 @@ export default css<any>`
       box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
       border: 0;
    }
+
+   .form-container {
+      margin: auto;
+      width: 100%;
+      max-width: 725px;
+
+      .form-title {
+         display: block;
+         margin-bottom: 0.375em;
+         font-size: 18px;
+         font-weight: 600;
+         line-height: 1.25;
+         letter-spacing: 0px;
+         padding: 2em 2em 1em 2em;
+         color: rgba(0, 0, 0, 0.8);
+      }
+
+      .form-body {
+         padding: 1em 2em 2em 2em;
+      }
+
+      hr {
+         margin: 0px;
+      }
+   }
 `;

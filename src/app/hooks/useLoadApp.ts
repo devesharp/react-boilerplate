@@ -24,7 +24,6 @@ const intervalCheckToken = 5;
 export function useLoadApp(): IUseLoadApp {
    const { isLogged, lastCheckAt } = useAuth();
    const dispatch = useDispatch();
-   console.log(lastCheckAt);
 
    const { started, errorLoadData, criticalError, registerOnInit, reloadPage: retryLoad } = useView({
       resolves: {
@@ -34,9 +33,8 @@ export function useLoadApp(): IUseLoadApp {
    });
 
    useEffect(() =>
-      registerOnInit((v) => {
+      registerOnInit((v: any) => {
          if (v.checkToken) {
-            console.log('updated');
             dispatch(actionUpdateDateVerifyAuth());
          }
       }),

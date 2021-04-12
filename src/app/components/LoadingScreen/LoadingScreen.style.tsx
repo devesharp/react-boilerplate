@@ -8,6 +8,8 @@ export const Container = styled(animated.div)`
    justify-content: center;
    justify-items: center;
    flex-direction: column;
+   top: 0;
+   left: 0;
    width: 100%;
    height: 100%;
    position: fixed;

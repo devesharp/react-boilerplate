@@ -15,7 +15,7 @@ import {
 export function ListingPageController(props?: any): any {
    const viewList = useViewList({
       resolves: {
-         resources: ResolveSync(() => ({
+         resources: ResolveSync<any>(() => ({
             results: [
                { id: 1, image: LogoProject1, name: 'Air B - Real Estate' },
                { id: 2, image: LogoProject2, name: 'Ad Brand - Fashion Footwear' },

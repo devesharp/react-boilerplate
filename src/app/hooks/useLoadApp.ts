@@ -1,11 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect, useState } from 'react';
 import { useView } from '@devesharp/react-hooks';
-import { actionLogOut, actionSetAuth } from '~/app/store/modules/auth';
-import { IAuthReducer } from '~/app/store/modules/auth/auth.interface';
-import { actionCleanUser } from '~/app/store/modules/user';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { API } from '~/app/common/api/ApiManager';
 import { useAuth } from '~/app/hooks/useAuth';
+import { actionUpdateDateVerifyAuth } from '~/app/store/modules/auth';
 
 /**
  * Carregar todas as dependências da aplicação, ex:
@@ -20,18 +18,33 @@ type IUseLoadApp = {
    retryLoad: () => void;
 };
 
+// Verificar token de 5 em 5 min
+const intervalCheckToken = 5;
+
 export function useLoadApp(): IUseLoadApp {
-   const { isLogged } = useAuth();
+   const { isLogged, lastCheckAt } = useAuth();
+   const dispatch = useDispatch();
+   console.log(lastCheckAt);
 
    const { started, errorLoadData, criticalError, registerOnInit, reloadPage: retryLoad } = useView({
       resolves: {
-         checkToken: API.checkToken,
+         checkToken: lastCheckAt > intervalCheckToken ? API.checkToken : null,
       },
       firstLoad: isLogged,
    });
 
+   useEffect(() =>
+      registerOnInit((v) => {
+         if (v.checkToken) {
+            console.log('updated');
+            dispatch(actionUpdateDateVerifyAuth());
+         }
+      }),
+   );
+
    return {
-      started: !isLogged || started,
+      // Não mostrar loadingscreen
+      started: lastCheckAt <= intervalCheckToken || !isLogged || started,
       errorLoadData: errorLoadData && isLogged,
       criticalError: criticalError && isLogged,
       retryLoad,

@@ -1266,12 +1266,12 @@
     eslint-plugin-react "7.15.1"
     eslint-plugin-react-hooks "1.7.0"
 
-"@devesharp/react-hooks@^1.0.16":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.16.tgz#60994cdff50a5f424054fea85212547b24f679d5"
-  integrity sha512-gxRTRjzAjc6G02ZwS1ogFRA68yQUc35gNZF7iRPtjz4PYH/QxVVvgpA7KzV+9H7/hYtQMA3pz5BYoODyzjVFMw==
+"@devesharp/react-hooks@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.19.tgz#e04439df2cb845ea9fd5e82043ec3159fab4d095"
+  integrity sha512-uob3iDjTTzlgDx2Jf8JFSQHRnWGD0TUvekgZu3n0LitnQLnrheF28RJ+n7AE54xyuK3W5zaIBQqyY8Q0rm/KTw==
   dependencies:
-    "@devesharp/react-utils" "^1.0.6"
+    "@devesharp/react-utils" "^1.0.19"
     "@unform/core" "^2.1.6"
     axios "^0.21.1"
     date-fns "^2.19.0"
@@ -1283,10 +1283,10 @@
     use-deep-compare-effect "^1.6.1"
     use-immer "^0.5.1"
 
-"@devesharp/react-utils@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-utils/-/react-utils-1.0.6.tgz#b216c3bdb16d0b66b09f15fcf8cd5ce29fb08e55"
-  integrity sha512-GJdk6mHx/Avc7KpVJ7CYQZHjXFy6ny6TZId+cYRZbz9HKstwbbW25jqFDE/c4dMJGqIj7c8ogVVfn7qpUw48+Q==
+"@devesharp/react-utils@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-utils/-/react-utils-1.0.19.tgz#e0cb4e971bb00594c75eee488f87e202a7a5b2a6"
+  integrity sha512-bJA+DiIKyB6btsuZhyfYvFYkUsBPIRm455MTemO+U+c2ZVj/tU75p5qdsQG4bPkVfCQVhDlUQ+bLLXFbcnUV4g==
   dependencies:
     "@unform/core" "^2.1.6"
     axios "^0.21.1"
@@ -1296,13 +1296,13 @@
     immer "^9.0.1"
     lodash "^4.17.21"
 
-"@devesharp/react-web@^1.0.16":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.16.tgz#7cc8b6e49349d2674f04b320bba96b98febb3cd8"
-  integrity sha512-3LSi5MtLsEEGaSmbmJrKO+8W0JmROsmpAPu3Jx8Y/VlJGZ8gNnGi/Ot8ugdawMA01TQLqS9wUvIfmVzOsxysog==
+"@devesharp/react-web@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.19.tgz#b5ca5ffe7a899108d025f7c1a016d3f489baad5e"
+  integrity sha512-Q1EjKsdsanPrV4cixDde74wACYAvMaOe+r98bIubVtizW6g4OmXE3CCbUKyJS5ZbbiRJPjXFfI3V+2UA3HxMaw==
   dependencies:
-    "@devesharp/react-hooks" "^1.0.16"
-    "@devesharp/react-utils" "^1.0.6"
+    "@devesharp/react-hooks" "^1.0.19"
+    "@devesharp/react-utils" "^1.0.19"
     "@devesharp/upload-files-js" "^0.0.4"
     "@dnd-kit/core" "^2.1.2"
     "@dnd-kit/modifiers" "^1.0.5"
@@ -2000,6 +2000,13 @@
   version "2.2.11"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.2.11.tgz#2521cc86f69d15c5b90664e4829d84566052c1cf"
   integrity sha512-2koNhpWm3DgWRp5tpkiJ8JGc1xTn2q0l+jUNUE7oMKXUf5NpI9AIdC4kbjGNFBdHtcxBD18LAksoudAVhFKCjw==
+
+"@types/date-fns@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@types/date-fns/-/date-fns-2.6.0.tgz#b062ca46562002909be0c63a6467ed173136acc1"
+  integrity sha1-sGLKRlYgApCb4MY6ZGftFzE2rME=
+  dependencies:
+    date-fns "*"
 
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
@@ -4649,6 +4656,11 @@ data-urls@^1.0.0, data-urls@^1.1.0:
     abab "^2.0.0"
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
+
+date-fns@*, date-fns@^2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.20.1.tgz#7e60b7035284a5f83e37500376e738d9f49ecfd3"
+  integrity sha512-8P5M8Kxbnovd0zfvOs7ipkiVJ3/zZQ0F/nrBW4x5E+I0uAZVZ80h6CKd24fSXQ5TLK5hXMtI4yb2O5rEZdUt2A==
 
 date-fns@^1.27.2:
   version "1.30.1"

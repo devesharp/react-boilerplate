@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { differenceInMinutes, parseISO } from 'date-fns';
 import { actionLogOut, actionSetAuth } from '~/app/store/modules/auth';
 import { IAuthReducer } from '~/app/store/modules/auth/auth.interface';
 import { actionCleanUser } from '~/app/store/modules/user';
@@ -9,6 +10,7 @@ type IUseAuth = {
    updateToken: (token: string) => void;
    logout: () => void;
    isLogged: boolean;
+   lastCheckAt: number;
 };
 
 export function useAuth(): IUseAuth {
@@ -25,7 +27,13 @@ export function useAuth(): IUseAuth {
    }
 
    return {
-      isLogged: auth.isLogged,
+      isLogged: auth.isLogged as boolean,
+      lastCheckAt: auth.lastCheck
+         ? differenceInMinutes(
+              new Date(),
+              typeof auth.lastCheck === 'string' ? parseISO(auth.lastCheck as any) : auth.lastCheck,
+           )
+         : Number.MAX_SAFE_INTEGER,
       updateToken,
       logout,
    };

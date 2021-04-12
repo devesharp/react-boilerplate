@@ -12,6 +12,10 @@ export const Container = css`
       flex: 0 0 320px;
    }
 
+   .col-listing {
+      flex: 1;
+   }
+
    .results-count {
       padding: 10px 0px;
       padding-bottom: 20px;

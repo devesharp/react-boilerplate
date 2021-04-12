@@ -13,7 +13,7 @@ export const LoginPage: FunctionComponent<ILoginProps> = function Login(props) {
    const { primary } = useTheme();
 
    return (
-      <S.Container>
+      <S.Container data-testid="login-page">
          <div className="login-container">
             <img src={LogoImage} className="logo" />
 

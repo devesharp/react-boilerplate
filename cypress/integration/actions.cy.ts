@@ -4,6 +4,6 @@ describe('Actions', () => {
    });
 
    it('example', () => {
-      cy.testId('home-page').contains('Home Page');
+      cy.testId('login-page').contains('Não tem uma conta?');
    });
 });

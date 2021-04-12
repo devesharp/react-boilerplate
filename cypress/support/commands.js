@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
 Cypress.Commands.add('keydown', (key, options = {}) => cy.get('body').trigger('keydown', { keyCode: key, which: key }));
-Cypress.Commands.add('testId', (name, options = {}) => cy.get(`[data-cy="${name}"]`, options));
+Cypress.Commands.add('testId', (name, options = {}) => cy.get(`[data-testid="${name}"]`, options));
 Cypress.Commands.add(
    'findTestId',
    {
       prevSubject: ['element', 'document', 'window'],
    },
    (subject, name, options = {}) => {
-      return cy.wrap(subject).find(`[data-cy="${name}"]`, options);
+      return cy.wrap(subject).find(`[data-testid="${name}"]`, options);
    },
 );
 Cypress.Commands.add('setMockErrorAPI', (method, url) =>

@@ -21,11 +21,14 @@ export const ListingPage: FunctionComponent<IListingProps> = function Listing(pr
                   <PageListing.ScrollContainer>
                      <div className="pt-3">
                         <div className="searching-container">
+                           {/* Filters */}
                            <div className="col-filters">
                               <div className="card">
                                  <PageListing.FiltersContainer filterComponent={ListingFilter} useClean={false} />
                               </div>
                            </div>
+                           {/* Filters */}
+
                            <div className="col-listing">
                               <ScreenMedia showIn="mobile">
                                  <PageListing.Context
@@ -69,11 +72,14 @@ export const ListingPage: FunctionComponent<IListingProps> = function Listing(pr
                                  </div>
                               </div>
 
+                              {/* Cards */}
                               <PageListing.CardsContainer
                                  renderResource={(resource: any, i: any) => <CardItem resource={resource} />}
                                  renderResourceSkeleton={(resource: any, i: any) => <CardItem skeleton />}
                               />
+                              {/* Cards */}
 
+                              {/* Pagination */}
                               <PageListing.Context
                                  render={({ resourcesTotal, limit, currentPage, setPage }: any) => (
                                     <Pagination
@@ -84,6 +90,7 @@ export const ListingPage: FunctionComponent<IListingProps> = function Listing(pr
                                     />
                                  )}
                               />
+                              {/* ---/ Pagination */}
                            </div>
                         </div>
                      </div>

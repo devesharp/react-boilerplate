@@ -2232,12 +2232,12 @@
     eslint-plugin-react "7.15.1"
     eslint-plugin-react-hooks "1.7.0"
 
-"@devesharp/react-hooks@^1.0.34":
-  version "1.0.34"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.34.tgz#b84472497ea22886de7223ea40f4d3220fdf99ac"
-  integrity sha512-O76ZKvKfdomScufnHYV9wiaAosRPYyem03KxJ+ovooGcUVm0wYaEUxiOqvzaJuDb5FX/biBhY/KUfdIOvmVKng==
+"@devesharp/react-hooks@^1.0.58":
+  version "1.0.58"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.58.tgz#d2bcfe3b1721e110e56c200853da6dd07c96a962"
+  integrity sha512-AQEGDG0zyfwsErTIRjKOhZ+6yZRCPNLOg4jmfYwLmo0EdlpAqUF5LIC9ThdPHwMupI/kC+KcLNIyS/J96z+boQ==
   dependencies:
-    "@devesharp/react-utils" "^1.0.21"
+    "@devesharp/react-utils" "^1.0.54"
     "@unform/core" "^2.1.6"
     axios "^0.21.1"
     date-fns "^2.19.0"
@@ -2249,10 +2249,10 @@
     use-deep-compare-effect "^1.6.1"
     use-immer "^0.5.1"
 
-"@devesharp/react-utils@^1.0.21":
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-utils/-/react-utils-1.0.21.tgz#563e817cc87dbc4a854429bc131bba392ed8b581"
-  integrity sha512-hf4m9sy782UU59fi13xHeCIz793ew3OXAIJET2vQdQ+SETj4VKRc7u4LhtmyV8apGsxM3cXJLTYm5YGw+DF/UQ==
+"@devesharp/react-utils@^1.0.54":
+  version "1.0.54"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-utils/-/react-utils-1.0.54.tgz#58f1b8c4be40d86036f046aa0e6c37925c486692"
+  integrity sha512-jZ3kLwtq2cAqrdzVVF35W0zfYH5cC82TsQqggu0ZHXtCVodb+nEk20jeT2jtKntQat4dwg9S/4ZXqdODZJ4T/w==
   dependencies:
     "@unform/core" "^2.1.6"
     axios "^0.21.1"
@@ -2262,14 +2262,14 @@
     immer "^9.0.1"
     lodash "^4.17.21"
 
-"@devesharp/react-web@^1.0.34":
-  version "1.0.34"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.34.tgz#593c6ff1afcc3ac4af79f7fbc6e52ccd56aaf6cb"
-  integrity sha512-dHxT0kLvQxF9NoinaWuAKM+4ZShBxPRaDetgvpNkcoNfX5AAdqHqFCOnWI0PHwtRIbjPCxGmR8JiB724Mr/Pog==
+"@devesharp/react-web@^1.0.58":
+  version "1.0.58"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.58.tgz#7453f4aefc98b2ab311aa1efe2bdd0d507f53b86"
+  integrity sha512-3u4vP6qyJ6H0RjX6ZNhA0o9tOBwaRX9n4onO60IxUreItF/29pe52T7M4LoEYDf8v/0baNQW1VatPGaHKOnxEA==
   dependencies:
-    "@devesharp/react-hooks" "^1.0.34"
-    "@devesharp/react-utils" "^1.0.21"
-    "@devesharp/upload-files-js" "^0.0.4"
+    "@devesharp/react-hooks" "^1.0.58"
+    "@devesharp/react-utils" "^1.0.54"
+    "@devesharp/upload-files-js" "^0.0.7"
     "@dnd-kit/core" "^2.1.2"
     "@dnd-kit/modifiers" "^1.0.5"
     "@dnd-kit/sortable" "^2.0.1"
@@ -2292,12 +2292,13 @@
   resolved "https://registry.yarnpkg.com/@devesharp/resize-image/-/resize-image-0.0.6.tgz#d19391232a2fd0730e6aebcff6295308b63e176a"
   integrity sha512-ICbcoEH/RPuzjgEx4EeGSpi0kmieVJltKybh0qrYaBCby75js54oFhdPnCKToHFkWQC33IGF6iGLNmisoopfAQ==
 
-"@devesharp/upload-files-js@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@devesharp/upload-files-js/-/upload-files-js-0.0.4.tgz#d396cb4fc60eb439b58f141f6c223de0ab80747a"
-  integrity sha512-fkSViE0SeNkmfT6GvJusDOxOWGgxqCsGdJLIEORmp7mJf84bmnAwxpo2suU+LaF58+Nzpf0RW+QgNM7oGh9OeQ==
+"@devesharp/upload-files-js@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@devesharp/upload-files-js/-/upload-files-js-0.0.7.tgz#d440922c52725b2b0be4ab690c8dbd8f51ee5260"
+  integrity sha512-HrKVub2b1vGz6QA0CnGTqjZKfqD/icOCZKvSsP0UyWeMhmtTLRZiF0MLtkhQcIfl+MJTidbFqOp7CA/g9vS/Tg==
   dependencies:
     "@devesharp/resize-image" "^0.0.6"
+    lodash.uniqueid "^4.0.1"
 
 "@dnd-kit/accessibility@^2.0.0":
   version "2.0.0"
@@ -11972,6 +11973,11 @@ lodash.uniq@4.5.0, lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
+
+lodash.uniqueid@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/lodash.uniqueid/-/lodash.uniqueid-4.0.1.tgz#3268f26a7c88e4f4b1758d679271814e31fa5b26"
+  integrity sha1-MmjyanyI5PSxdY1nknGBTjH6WyY=
 
 "lodash@>=3.5 <5":
   version "4.17.15"

@@ -76,7 +76,7 @@ export default css<any>`
 
    .container {
       width: 100%;
-      max-width: 1380px;
+      max-width: 1200px;
    }
 
    b {
@@ -130,5 +130,15 @@ export default css<any>`
       hr {
          margin: 0px;
       }
+   }
+
+   .width-max {
+      max-width: 1200px !important;
+      margin: auto;
+   }
+
+   .page-container {
+      margin: auto;
+      pading: 20px;
    }
 `;

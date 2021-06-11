@@ -5,6 +5,7 @@ import { faCogs, faLayerGroup, faTable, faUserCircle } from '@fortawesome/free-s
 import { IDashboardProps } from './Dashboard.interface';
 import * as S from './Dashboard.style';
 import { LogoImage } from '~/assets/images';
+import {faNewspaper} from "@fortawesome/free-solid-svg-icons/faNewspaper";
 
 export const Dashboard: FunctionComponent<IDashboardProps> = function Dashboard(props) {
    return (
@@ -27,6 +28,18 @@ const menu = [
          </>
       ),
       route: '/',
+   },
+   {
+      title: (
+         <>
+            <FontAwesomeIcon icon={faNewspaper} /> Pages
+         </>
+      ),
+      route: '/components',
+      subMenu: [
+         { title: 'Listing Cards', route: '/listing' },
+         { title: 'Create resources', route: '/create' },
+      ],
    },
    {
       title: (

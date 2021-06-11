@@ -16,5 +16,6 @@ export const Container = css`
       flex: 1;
       overflow-y: auto;
       position: relative;
+      width: 100%;
    }
 `;

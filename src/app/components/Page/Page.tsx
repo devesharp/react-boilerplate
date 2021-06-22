@@ -4,14 +4,16 @@ import * as S from './Page.style';
 
 export const Page: FunctionComponent<IPageProps> = function Page(props) {
    return (
-      <S.Container>
-         <div className="header-title">
-            <div className="container ">
-               <h4>{props.title}</h4>
+      <S.Container pageForm={props.formPage}>
+         <div className="page-container">
+            <div className="header-title">
+               <div className="container">
+                  <h4>{props.title}</h4>
+               </div>
             </div>
-         </div>
 
-         <div className="page-container">{props.children}</div>
+            {props.children}
+         </div>
       </S.Container>
    );
 };

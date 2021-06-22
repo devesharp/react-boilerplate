@@ -59,10 +59,7 @@ export const LoginPage: FunctionComponent<ILoginProps> = function Login(props) {
                   <div className="new-account text-center">
                      Não tem uma conta?
                      <b>
-                        {' '}
-                        <Link to="/register" className="float-right">
-                           Cadastre-se
-                        </Link>
+                        <Link to="/register">Cadastre-se</Link>
                      </b>
                   </div>
                </Form>

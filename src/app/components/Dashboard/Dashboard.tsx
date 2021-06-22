@@ -2,16 +2,17 @@ import React, { FunctionComponent, useState, useRef } from 'react';
 import { Header } from '@devesharp/react-web/dist/components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCogs, faLayerGroup, faTable, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons/faNewspaper';
+import { HeaderVertical } from '@devesharp/react-web';
 import { IDashboardProps } from './Dashboard.interface';
 import * as S from './Dashboard.style';
 import { LogoImage } from '~/assets/images';
-import {faNewspaper} from "@fortawesome/free-solid-svg-icons/faNewspaper";
 
 export const Dashboard: FunctionComponent<IDashboardProps> = function Dashboard(props) {
    return (
       <S.Container>
          <div className="header-container">
-            <Header logo={LogoImage} menu={menu} user={user} />
+            <HeaderVertical logo={LogoImage} menu={menu} user={user} />
          </div>
          <div className="page-body">{props.children}</div>
       </S.Container>
@@ -24,7 +25,7 @@ const menu = [
    {
       title: (
          <>
-            <FontAwesomeIcon icon={faUserCircle} /> Home
+            <span className="material-icons-outlined icon">dashboard</span> Dashboard
          </>
       ),
       route: '/',
@@ -32,13 +33,14 @@ const menu = [
    {
       title: (
          <>
-            <FontAwesomeIcon icon={faNewspaper} /> Pages
+            <span className="material-icons-outlined icon">layers</span> Example Pages
          </>
       ),
       route: '/components',
       subMenu: [
          { title: 'Listing Cards', route: '/listing' },
-         { title: 'Create resources', route: '/create' },
+         { title: 'Listing Table', route: '/listing-table' },
+         { title: 'Create resource', route: '/create' },
       ],
    },
    {

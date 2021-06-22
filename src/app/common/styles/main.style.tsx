@@ -21,12 +21,39 @@ export default css<any>`
    body,
    #root {
       height: 100%;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: #222;
       font-size: 16px;
    }
+
    body {
       -webkit-font-smoothing: antialiased;
+   }
+
+   .material-icons-outlined {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px; /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
    }
 
    .input-title {
@@ -34,8 +61,7 @@ export default css<any>`
       text-transform: none !important;
       font-weight: 400 !important;
       color: rgba(0, 0, 0, 0.45) !important;
-      padding-bottom: 0px;
-      height: 20px;
+      height: 24px;
 
       &.focus {
          color: ${(p) => p.theme.primary} !important;
@@ -54,14 +80,15 @@ export default css<any>`
       color: rgb(68, 68, 68);
       font-size: 15px;
       font-weight: 600;
-      height: 35px !important;
-      min-height: 35px !important;
-      border-radius: 0px !important;
+      height: 40px !important;
+      min-height: 40px !important;
+      border-radius: 3px !important;
       border-top: none !important;
       border-right: none !important;
       border-left: none !important;
       border-image: initial !important;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+      padding: 0px 10px;
+      border: 1px solid rgba(0, 0, 0, 0.25) !important;
 
       input {
          font-size: 15px !important;
@@ -72,6 +99,29 @@ export default css<any>`
       &.focus {
          border-color: ${(p) => p.theme.primary} !important;
       }
+   }
+
+   select {
+      display: flex;
+      align-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      width: 100%;
+      background: white;
+      border: 2px solid rgba(0, 0, 0, 0.25);
+      border-radius: 3px;
+      color: rgb(68, 68, 68);
+      font-size: 15px;
+      font-weight: 600;
+      height: 40px !important;
+      min-height: 40px !important;
+      border-radius: 3px !important;
+      border-top: none !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-image: initial !important;
+      padding: 0px 10px;
+      border: 1px solid rgba(0, 0, 0, 0.25) !important;
    }
 
    .container {
@@ -91,23 +141,23 @@ export default css<any>`
    }
 
    .header-title {
-      background: ${(p) => p.theme.primary};
-      padding: 15px 20px;
-      color: white;
+      padding: 20px 0px;
+      color: #000;
 
       h4 {
-         font-size: 22px;
+         font-size: 28px;
          margin: 0px;
          padding: 0px;
+         font-weight: 600;
       }
    }
 
    .card {
-      box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+      box-shadow: 0 5px 3px 0 rgb(82 63 105 / 5%);
       border: 0;
    }
 
-   .form-container {
+   .form-container2 {
       margin: auto;
       width: 100%;
       max-width: 725px;

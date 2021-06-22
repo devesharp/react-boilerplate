@@ -2262,10 +2262,10 @@
     immer "^9.0.1"
     lodash "^4.17.21"
 
-"@devesharp/react-web@^1.0.58":
-  version "1.0.58"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.58.tgz#7453f4aefc98b2ab311aa1efe2bdd0d507f53b86"
-  integrity sha512-3u4vP6qyJ6H0RjX6ZNhA0o9tOBwaRX9n4onO60IxUreItF/29pe52T7M4LoEYDf8v/0baNQW1VatPGaHKOnxEA==
+"@devesharp/react-web@^1.0.59":
+  version "1.0.59"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.59.tgz#222ca4965af73eda7d185da1853d41557df0ffe5"
+  integrity sha512-MM1sBl9BrmjfYYssK1afRgpj57T8QTcHn2osf1U491y9mXNz0aKBh0Hl+cFrju8HAWbgBAAuWbTrJTmVRvSHlw==
   dependencies:
     "@devesharp/react-hooks" "^1.0.58"
     "@devesharp/react-utils" "^1.0.54"
@@ -2276,11 +2276,13 @@
     "@unform/core" "^2.1.6"
     bootstrap "^4.6.0"
     classnames "^2.3.1"
+    contrast-color "^1.0.1"
     copyfiles "^2.4.1"
     date-fns "^2.19.0"
     immer "^9.0.1"
     lodash "^4.17.21"
     polished "^4.1.1"
+    react-animate-height "^2.0.23"
     react-animated-number "^0.4.4"
     react-native-responsive-fontsize "^0.5.0"
     react-textarea-autosize "^8.3.2"
@@ -6675,6 +6677,11 @@ content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
+
+contrast-color@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/contrast-color/-/contrast-color-1.0.1.tgz#15fd7b444f43ccb7d6175d7e131d095623a9f146"
+  integrity sha512-XeTV/LiyWrf/OWnODTqve2YGBfg32N6zlLqQjJKmEY+ffDqIfecgdmluVz7tky1D4VEaweZgoeRJJT87gDSDCQ==
 
 convert-source-map@1.7.0, convert-source-map@^1.4.0, convert-source-map@^1.5.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   version "1.7.0"
@@ -14661,6 +14668,14 @@ raw-loader@^4.0.2:
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
+
+react-animate-height@^2.0.23:
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/react-animate-height/-/react-animate-height-2.0.23.tgz#2e14ac707b20ae67b87766ccfd581e693e0e7ec7"
+  integrity sha512-DucSC/1QuxWEFzR9IsHMzrf2nrcZ6qAmLIFoENa2kLK7h72XybcMA9o073z7aHccFzdMEW0/fhAdnQG7a4rDow==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
 
 react-animated-number@^0.4.4:
   version "0.4.4"

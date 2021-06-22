@@ -17,8 +17,13 @@ export const Container = css<any>`
 
    .page-container {
       flex: 1;
+      padding: 0px 30px;
       overflow-y: scroll;
       position: relative;
       width: 100%;
+
+      @media (max-width: 992px) {
+         padding: 0px 10px;
+      }
    }
 `;

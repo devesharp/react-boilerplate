@@ -59,8 +59,8 @@ export default css<any>`
    .input-title {
       font-size: 14px !important;
       text-transform: none !important;
-      font-weight: 400 !important;
-      color: rgba(0, 0, 0, 0.45) !important;
+      font-weight: 500 !important;
+      color: #2b364b !important;
       height: 24px;
 
       &.focus {
@@ -75,12 +75,10 @@ export default css<any>`
       align-items: center;
       width: 100%;
       background: white;
-      border: 2px solid rgba(0, 0, 0, 0.25);
       border-radius: 3px;
       color: rgb(68, 68, 68);
       font-size: 15px;
       font-weight: 600;
-      height: 40px !important;
       min-height: 40px !important;
       border-radius: 3px !important;
       border-top: none !important;
@@ -88,12 +86,16 @@ export default css<any>`
       border-left: none !important;
       border-image: initial !important;
       padding: 0px 10px;
-      border: 1px solid rgba(0, 0, 0, 0.25) !important;
+      border: 1px solid #c3cdda !important;
 
       input {
          font-size: 15px !important;
          font-weight: 400 !important;
          padding: 0px !important;
+      }
+
+      textarea {
+         padding: 10px 0px;
       }
 
       &.focus {
@@ -121,7 +123,7 @@ export default css<any>`
       border-left: none !important;
       border-image: initial !important;
       padding: 0px 10px;
-      border: 1px solid rgba(0, 0, 0, 0.25) !important;
+      border: 1px solid #c3cdda !important;
    }
 
    .container {
@@ -152,9 +154,24 @@ export default css<any>`
       }
    }
 
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      color: #2e3e7f;
+   }
+
+   h4 {
+      font-size: 20px;
+      font-weight: 500;
+   }
+
    .card {
-      box-shadow: 0 5px 3px 0 rgb(82 63 105 / 5%);
+      box-shadow: 0 2px 1px 1px rgb(91 124 253 / 5%);
       border: 0;
+      border-radius: 10px;
    }
 
    .form-container2 {

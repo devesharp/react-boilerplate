@@ -50,14 +50,14 @@ export const ListingFilter: FunctionComponent<any> = function ListingFilter({ fi
                   <Input name="members" title="Members" onEnter={forceSubmit} onBlur={forceSubmit} />
                </div>
 
-               <div className="filter-action">
-                  <div className="text-right">
-                     <div className="input-title" />
-                     <Button onClick={forceSubmit} w100>
-                        Search
-                     </Button>
-                  </div>
-               </div>
+               {/*<div className="filter-action">*/}
+               {/*   <div className="text-right">*/}
+               {/*      <div className="input-title" />*/}
+               {/*      <Button onClick={forceSubmit} w100>*/}
+               {/*         Search*/}
+               {/*      </Button>*/}
+               {/*   </div>*/}
+               {/*</div>*/}
             </div>
          </Form>
       </S.Container>

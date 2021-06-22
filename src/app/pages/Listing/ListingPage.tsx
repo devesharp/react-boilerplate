@@ -14,7 +14,7 @@ export const ListingPage: FunctionComponent<IListingProps> = function Listing(pr
    const ctrl = ListingPageController();
 
    return (
-      <Page title="Projects">
+      <Page title="Projects" addResource={() => {}}>
          <S.Container>
             <div className="container pb-5">
                <PageListing.Container viewList={ctrl.viewList}>

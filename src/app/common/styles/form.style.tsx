@@ -9,24 +9,24 @@ export default css<any>`
       max-width: 725px;
       padding: 0px;
 
+      .form-title {
+         font-size: 22px;
+         font-weight: 600;
+         margin-bottom: 30px;
+      }
+
       &.lg {
          max-width: 1050px;
       }
 
       .form-section {
-         padding: 3em 3em 1em 3em;
+         padding: 2em 3em 2em 3em;
          background: white;
-      }
+         margin-bottom: 2px;
 
-      .form-title {
-         display: block;
-         margin-bottom: 15px;
-         font-size: 24px;
-         font-weight: 600;
-         line-height: 1.25;
-         letter-spacing: 0px;
-         color: rgba(0, 0, 0, 0.8);
-         margin-left: -10px;
+         @media (max-width: 992px) {
+            padding: 2em 1.5em 2em 1.5em;
+         }
       }
 
       .form-sub-title {
@@ -48,20 +48,6 @@ export default css<any>`
 
       hr {
          margin: 0px;
-      }
-
-      .input-title {
-         font-size: 13px !important;
-         line-height: 16px !important;
-         display: flex !important;
-         text-transform: uppercase !important;
-         margin-bottom: 0px !important;
-         font-weight: 600 !important;
-         color: #585858 !important;
-
-         &.focus {
-            color: ${(p) => p.theme.primary} !important;
-         }
       }
 
       .btn-group {
@@ -97,6 +83,14 @@ export default css<any>`
             color: #888 !important;
          }
       }
+
+      .checkbox-container {
+         .title {
+            font-size: 14px !important;
+            font-weight: 500;
+         }
+      }
+
       input:checked + .checkbox {
          border-color: ${(p) => p.theme.primary} !important;
          background: ${(p) => p.theme.primary} !important;

@@ -2,10 +2,11 @@ import { ITheme, ThemeDefault } from '@devesharp/react-web';
 
 export const ThemeVariables: ITheme = {
    ...ThemeDefault,
-   primary: '#09abed',
+   primary: '#5b7cfd',
    header: {
-      backgroundColor: 'white',
-      textColor: '#444',
-      textColorMenu: '#444',
+      backgroundColor: '#5b7cfd',
+      textColor: 'white',
+      textColorMenu: 'white',
+      textColorActiveMenu: 'white',
    },
 };

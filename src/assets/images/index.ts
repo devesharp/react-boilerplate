@@ -1,4 +1,5 @@
-export { default as LogoImage } from './logo.svg';
+export { default as LogoImage } from './logo.png';
+export { default as LogoVerticalImage } from './logo-vertical.png';
 export { default as LogoProject1 } from './project-logos/1.png';
 export { default as LogoProject2 } from './project-logos/2.png';
 export { default as LogoProject3 } from './project-logos/3.png';

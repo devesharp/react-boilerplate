@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components';
 import { useTransition } from 'react-spring';
 import { ILoadingScreenProps } from './LoadingScreen.interface';
 import * as S from './LoadingScreen.style';
-import { LogoImage } from '~/assets/images';
+import { LogoVerticalImage } from '~/assets/images';
 
 export const LoadingScreen: FunctionComponent<ILoadingScreenProps> = function LoadingScreen(props) {
    const { primary } = useTheme();
@@ -21,12 +21,12 @@ export const LoadingScreen: FunctionComponent<ILoadingScreenProps> = function Lo
          {transitions.map(
             ({ item, key, props: propsAnim }: any) =>
                item && (
-                  <S.Container key={key} style={propsAnim}>
+                  <S.Container>
                      <div className="login-page--container">
                         <div className="login-page--container--inner">
                            <div className="logos">
                               <div>
-                                 <img src={LogoImage} className="logo" />
+                                 <img src={LogoVerticalImage} className="logo" />
                               </div>
                            </div>
                            <div>
@@ -41,7 +41,7 @@ export const LoadingScreen: FunctionComponent<ILoadingScreenProps> = function Lo
                               )}
                               {!error && (
                                  <div className="icon-loading">
-                                    <LoaderIcon color={primary} size={48} />
+                                    <LoaderIcon color="white" size={48} />
                                  </div>
                               )}
                            </div>

@@ -6,7 +6,7 @@ export default css<any>`
    .form-container {
       margin: auto;
       width: 100%;
-      max-width: 725px;
+      max-width: 1024px;
       padding: 0px;
 
       .form-title {

@@ -140,6 +140,11 @@ export default css<any>`
       font-size: 15px;
       padding-top: 0px !important;
       padding-bottom: 0px !important;
+
+      &.sm {
+         height: 30px;
+         font-size: 13px;
+      }
    }
 
    .header-title {
@@ -161,6 +166,10 @@ export default css<any>`
    h5,
    h6 {
       color: #2e3e7f;
+   }
+
+   label {
+      margin: 0px;
    }
 
    h4 {

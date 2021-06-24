@@ -2262,10 +2262,10 @@
     immer "^9.0.1"
     lodash "^4.17.21"
 
-"@devesharp/react-web@^1.0.59":
-  version "1.0.59"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.59.tgz#222ca4965af73eda7d185da1853d41557df0ffe5"
-  integrity sha512-MM1sBl9BrmjfYYssK1afRgpj57T8QTcHn2osf1U491y9mXNz0aKBh0Hl+cFrju8HAWbgBAAuWbTrJTmVRvSHlw==
+"@devesharp/react-web@^1.0.60":
+  version "1.0.60"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.60.tgz#fe2257950a9e4a25365819ea14e5513c70fe9abd"
+  integrity sha512-AfdcYj5Q7gc1W+H8BBVhK+AEjfLfaa0q6MR5ooPTpvHa66LaAkYzOAQTKTAsiACTkoyxyz82+lcLExA3Cd2GXQ==
   dependencies:
     "@devesharp/react-hooks" "^1.0.58"
     "@devesharp/react-utils" "^1.0.54"
@@ -2281,6 +2281,7 @@
     date-fns "^2.19.0"
     immer "^9.0.1"
     lodash "^4.17.21"
+    path-to-regexp "^6.2.0"
     polished "^4.1.1"
     react-animate-height "^2.0.23"
     react-animated-number "^0.4.4"
@@ -13426,6 +13427,11 @@ path-to-regexp@^1.7.0:
   integrity sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA==
   dependencies:
     isarray "0.0.1"
+
+path-to-regexp@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
+  integrity sha512-f66KywYG6+43afgE/8j/GoiNyygk/bnoCbps++3ErRKsIYkGGupyv07R2Ok5m9i67Iqc+T2g1eAUGUPzWhYTyg==
 
 path-type@^2.0.0:
   version "2.0.0"

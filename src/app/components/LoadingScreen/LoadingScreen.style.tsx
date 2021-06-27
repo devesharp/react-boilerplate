@@ -14,7 +14,7 @@ export const Container = styled(animated.div)`
    height: 100%;
    position: fixed;
    transform: translate3d(0, 0, 0);
-   z-index: 100;
+   z-index: 1000;
    background: ${(p) => p.theme?.header?.backgroundColor};
 
    .login-page--container {

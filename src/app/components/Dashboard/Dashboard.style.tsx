@@ -21,8 +21,22 @@ export const Container = css`
       }
    }
 
+   .username-container {
+      padding: 20px 0px;
+   }
+
    .page-body {
       flex: 1;
       overflow-y: auto;
+   }
+
+   @media (max-width: 992px) {
+      .ds-logo {
+         padding: 0px;
+         
+         img {
+            max-height: 30px;
+         }
+      }
    }
 `;

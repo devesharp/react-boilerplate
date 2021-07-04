@@ -10,9 +10,17 @@ export const Container = css<any>`
 
    .header-title {
       flex: 0;
-      ${(p: any) => p.pageForm && 'max-width: 725px;'}
+      ${(p: any) => p.pageForm && 'max-width: 1024px;'}
       margin-left: auto;
       margin-right: auto;
+
+      h4 {
+         font-size: 30px;
+         font-weight: 400;
+         color: #434e6c;
+         line-height: 36px;
+         padding: 20px 30px 20px 30px;
+      }
    }
 
    .page-container {

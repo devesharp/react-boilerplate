@@ -4,6 +4,7 @@ const css = styled.div;
 
 export const Container = css`
    background: #e7eef7;
+   background: white;
    height: 100%;
    display: flex;
    flex-direction: row;

@@ -60,7 +60,7 @@ export default css<any>`
       font-size: 14px !important;
       text-transform: none !important;
       font-weight: 500 !important;
-      color: #2b364b !important;
+      color: #5f6c79 !important;
       height: 24px;
 
       &.focus {
@@ -96,6 +96,7 @@ export default css<any>`
 
       textarea {
          padding: 10px 0px;
+         font-weight: 400 !important;
       }
 
       &.focus {
@@ -114,7 +115,7 @@ export default css<any>`
       border-radius: 3px;
       color: rgb(68, 68, 68);
       font-size: 15px;
-      font-weight: 600;
+      font-weight: 400 !important;
       height: 40px !important;
       min-height: 40px !important;
       border-radius: 3px !important;

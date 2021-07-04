@@ -6,7 +6,7 @@ import { useTheme } from 'styled-components';
 import { ILoginProps } from './LoginPage.interface';
 import { LoginPageController } from './LoginPage.controller';
 import * as S from './LoginPage.style';
-import { LogoImage } from '~/assets/images';
+import { LogoVerticalImage } from '~/assets/images';
 
 export const LoginPage: FunctionComponent<ILoginProps> = function Login(props) {
    const c = LoginPageController();
@@ -15,7 +15,7 @@ export const LoginPage: FunctionComponent<ILoginProps> = function Login(props) {
    return (
       <S.Container data-testid="login-page">
          <div className="login-container">
-            <img src={LogoImage} className="logo" />
+            <img src={LogoVerticalImage} className="logo" />
 
             {c.loading && (
                <div className="loading-icon">

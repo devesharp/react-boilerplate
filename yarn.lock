@@ -2232,12 +2232,12 @@
     eslint-plugin-react "7.15.1"
     eslint-plugin-react-hooks "1.7.0"
 
-"@devesharp/react-hooks@^1.0.58":
-  version "1.0.58"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.58.tgz#d2bcfe3b1721e110e56c200853da6dd07c96a962"
-  integrity sha512-AQEGDG0zyfwsErTIRjKOhZ+6yZRCPNLOg4jmfYwLmo0EdlpAqUF5LIC9ThdPHwMupI/kC+KcLNIyS/J96z+boQ==
+"@devesharp/react-hooks@^1.0.73":
+  version "1.0.73"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-hooks/-/react-hooks-1.0.73.tgz#b0a196ba9ed50d9b991d90907533093699e13fb3"
+  integrity sha512-wbozDpJADsFxzhu4lqNxnKooQx7nGKJoUQUuDZolaeWeFHPjc+CyyqZ3blUQZUpNvswckVfKr9CT+zMjzAkAaQ==
   dependencies:
-    "@devesharp/react-utils" "^1.0.54"
+    "@devesharp/react-utils" "^1.0.62"
     "@unform/core" "^2.1.6"
     axios "^0.21.1"
     date-fns "^2.19.0"
@@ -2249,10 +2249,10 @@
     use-deep-compare-effect "^1.6.1"
     use-immer "^0.5.1"
 
-"@devesharp/react-utils@^1.0.54":
-  version "1.0.54"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-utils/-/react-utils-1.0.54.tgz#58f1b8c4be40d86036f046aa0e6c37925c486692"
-  integrity sha512-jZ3kLwtq2cAqrdzVVF35W0zfYH5cC82TsQqggu0ZHXtCVodb+nEk20jeT2jtKntQat4dwg9S/4ZXqdODZJ4T/w==
+"@devesharp/react-utils@^1.0.62":
+  version "1.0.62"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-utils/-/react-utils-1.0.62.tgz#c881f3b100745b0f86ee0e08163b894018bdd773"
+  integrity sha512-m9OkTiFo6xy6gNKn0fEqR7hUapNt1e9LClZfeQk5Rsrm+RUWIFywpjNnhPMiWCfh9MhY7YX4r5wZCTxPX/GSgg==
   dependencies:
     "@unform/core" "^2.1.6"
     axios "^0.21.1"
@@ -2262,13 +2262,13 @@
     immer "^9.0.1"
     lodash "^4.17.21"
 
-"@devesharp/react-web@^1.0.60":
-  version "1.0.60"
-  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.60.tgz#fe2257950a9e4a25365819ea14e5513c70fe9abd"
-  integrity sha512-AfdcYj5Q7gc1W+H8BBVhK+AEjfLfaa0q6MR5ooPTpvHa66LaAkYzOAQTKTAsiACTkoyxyz82+lcLExA3Cd2GXQ==
+"@devesharp/react-web@^1.0.73":
+  version "1.0.73"
+  resolved "https://registry.yarnpkg.com/@devesharp/react-web/-/react-web-1.0.73.tgz#5c8779701aa01180e01e86b4318ad07643a24a7c"
+  integrity sha512-XW48qNIPZVnx8QcjRewQRA78ePfli/P/OinmkyUYHKYGE9fodD2Nej2ZHg7ynuMN8KMV6W0FLX9sVg4lBRDVeQ==
   dependencies:
-    "@devesharp/react-hooks" "^1.0.58"
-    "@devesharp/react-utils" "^1.0.54"
+    "@devesharp/react-hooks" "^1.0.73"
+    "@devesharp/react-utils" "^1.0.62"
     "@devesharp/upload-files-js" "^0.0.7"
     "@dnd-kit/core" "^2.1.2"
     "@dnd-kit/modifiers" "^1.0.5"

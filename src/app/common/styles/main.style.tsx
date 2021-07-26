@@ -104,6 +104,10 @@ export default css<any>`
       }
    }
 
+   a {
+      color: ${(p) => p.theme.primary};
+   }
+
    select {
       display: flex;
       align-content: center;

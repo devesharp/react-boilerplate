@@ -15,7 +15,7 @@ export const Container = css`
 
    .ds-logo {
       text-align: center;
-      padding-top: 20px;
+      padding: 10px 0px;
 
       img {
          height: 40px;
@@ -23,7 +23,7 @@ export const Container = css`
    }
 
    .username-container {
-      padding: 20px 0px;
+      padding: 15px 20px;
    }
 
    .page-body {
